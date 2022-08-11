@@ -1,0 +1,26 @@
+--Create a grocery store database
+
+CREATE TABLE fruits (Id INTEGER PRIMARY KEY, name TEXT, location INTEGER, price INTEGER, stock INTEGER);
+
+
+INSERT INTO fruits VALUES (1,"apples", 11, 4.99, 10);
+INSERT INTO fruits VALUES (2, "bananas", 3, 2.49, 5);
+INSERT INTO fruits VALUES (3, "oranges", 12, 4.89, 12);
+INSERT INTO fruits VALUES (4, "Kiwi", 9, 4.99, 2);
+INSERT INTO fruits VALUES (5, "Peach", 9, 7.99, 3);
+INSERT INTO fruits VALUES (6, "Plum", 3, 1.49, 7);
+INSERT INTO fruits VALUES (7, "Strawberry", 10, 4.99, 20);
+INSERT INTO fruits VALUES (8, "Blueberry", 10, 4.99, 18);
+INSERT INTO fruits VALUES (9, "Blackberry", 10, 4.99, 22);
+INSERT INTO fruits VALUES (10, "Pear", 9, 3.89, 25);
+INSERT INTO fruits VALUES (11, "Mango", 3, 8.49, 4);
+INSERT INTO fruits VALUES (12, "Pineapple", 11, 10.99, 3); 
+INSERT INTO fruits VALUES (13, "Apricot", 1, 4.99, 16);
+INSERT INTO fruits VALUES (14, "Raspberry", 10, 3.99, 12);
+INSERT INTO fruits VALUES (15, "Avocado", 5, 12.99, 25);
+
+--display the database ordered by price. 
+SELECT * FROM fruits ORDER BY price desc; 
+
+--What are the 5 most expensive items
+SELECT * FROM fruits ORDER BY price asc LIMIT 5;
